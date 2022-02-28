@@ -9,16 +9,39 @@
 #include <JuceHeader.h>
 #include "RatEngine.h"
 //==============================================================================
-int main (int argc, char* argv[])
+
+class Application : public juce::JUCEApplication
 {
-    int portno;
-    char* p;
-    portno = (argc > 1 ? strtol(argv[1], &p, 10) : 5899);
+public:
+    //==========================================================================
+    Application() = default;
+    const juce::String getApplicationName() override { return "RationaleEngine"; }
+    const juce::String getApplicationVersion() override { return "0.0.1"; }
 
-    if (argc > 1) { std::cout << argv[1] << " " << portno << std::endl; }
+    void initialise(const juce::String&) override
+    {
+        int cbport = 5899;
+        auto clArgs = getCommandLineParameterArray();
+        if (clArgs.size() > 1)
+        {
+            const juce::String *portStr = &clArgs[1];
+            if (portStr->containsOnly("0123456789")) {
+                cbport = portStr->getIntValue();
+            }
+        }
+        //ratEngine->setCbPort(cbport);
+        ratEngine.reset(new RatEngine(cbport, *this));
+        ratEngine->run();
 
-    RatEngine ratEngine(portno);
-    ratEngine.run();
-    ratEngine.endItAll();
-    return 0;
-}
+        
+    }
+
+    void shutdown() override
+    {
+    }
+
+
+    std::unique_ptr<RatEngine> ratEngine;
+};
+
+START_JUCE_APPLICATION (Application)

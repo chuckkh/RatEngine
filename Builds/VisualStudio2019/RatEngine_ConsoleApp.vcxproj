@@ -2212,8 +2212,12 @@
       <ProgramDataBaseFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)\RatEngine.pdb</ProgramDataBaseFileName>
       <ProgramDataBaseFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)\RatEngine.pdb</ProgramDataBaseFileName>
     </ClCompile>
+    <ClCompile Include="..\..\Source\RatEvent.cpp" />
+    <ClCompile Include="..\..\Source\RatIO.cpp" />
     <ClCompile Include="..\..\Source\RatIOManager.cpp" />
-    <ClCompile Include="..\..\Source\RatMIDIManager.cpp" />
+    <ClCompile Include="..\..\Source\RatMPEManager.cpp" />
+    <ClCompile Include="..\..\Source\RatMPEOut.cpp" />
+    <ClCompile Include="..\..\Source\RatNote.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\..\JUCE\modules\juce_audio_basics\audio_play_head\juce_AudioPlayHead.h" />
@@ -3078,8 +3082,12 @@
     <ClInclude Include="..\..\JuceLibraryCode\AppConfig.h" />
     <ClInclude Include="..\..\JuceLibraryCode\JuceHeader.h" />
     <ClInclude Include="..\..\Source\RatEngine.h" />
+    <ClInclude Include="..\..\Source\RatEvent.h" />
+    <ClInclude Include="..\..\Source\RatIO.h" />
     <ClInclude Include="..\..\Source\RatIOManager.h" />
-    <ClInclude Include="..\..\Source\RatMIDIManager.h" />
+    <ClInclude Include="..\..\Source\RatMPEManager.h" />
+    <ClInclude Include="..\..\Source\RatMPEOut.h" />
+    <ClInclude Include="..\..\Source\RatNote.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\..\..\JUCE\modules\juce_audio_devices\native\oboe\CMakeLists.txt" />

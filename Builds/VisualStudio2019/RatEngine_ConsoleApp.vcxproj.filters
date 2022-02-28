@@ -2565,6 +2565,24 @@
     <ClCompile Include="..\..\Source\RatEngine.cpp">
       <Filter>RatEngine\Source</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\RatMPEManager.cpp">
+      <Filter>RatEngine\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\RatIOManager.cpp">
+      <Filter>RatEngine\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\RatIO.cpp">
+      <Filter>RatEngine\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\RatMPEOut.cpp">
+      <Filter>RatEngine\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\RatEvent.cpp">
+      <Filter>RatEngine\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\RatNote.cpp">
+      <Filter>RatEngine\Source</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\..\JUCE\modules\juce_audio_basics\audio_play_head\juce_AudioPlayHead.h">
@@ -5151,6 +5169,24 @@
       <Filter>JUCE Library Code</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\RatEngine.h">
+      <Filter>RatEngine\Source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\RatMPEManager.h">
+      <Filter>RatEngine\Source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\RatIOManager.h">
+      <Filter>RatEngine\Source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\RatIO.h">
+      <Filter>RatEngine\Source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\RatMPEOut.h">
+      <Filter>RatEngine\Source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\RatEvent.h">
+      <Filter>RatEngine\Source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\RatNote.h">
       <Filter>RatEngine\Source</Filter>
     </ClInclude>
   </ItemGroup>
